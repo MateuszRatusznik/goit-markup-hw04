@@ -139,7 +139,7 @@ figure, figcaption {
     background-image: linear-gradient(
         var(--bg-overlay),
         var(--bg-overlay)),
-    url("/images/bg-img.jpg");
+    url("./images/bg-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -275,7 +275,6 @@ figure, figcaption {
 
 .team-list-link {
     text-decoration: none;
-
 }
 
 .social-icon {
