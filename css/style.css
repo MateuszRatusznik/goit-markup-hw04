@@ -141,7 +141,7 @@ figure, figcaption {
     background-image: linear-gradient(
         var(--bg-overlay),
         var(--bg-overlay)),
-    url('/images/bg-img.jpg');
+    url('../images/bg-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -307,14 +307,29 @@ figure, figcaption {
 }
 
 /* ===== OUR CLIENTS ====*/
-.clients-list {
+.cilents-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.clients-list-item {
+    padding: 16px 32px;
+    border: 1px solid var(--social-icon);
+    border-radius: 4px;
 }
 
 .clients-list-link {
-    fill: var(--main-color);
+    fill: var(--social-icon);
+}
+
+.clients-list-link:hover, .clients-list-link:focus
+{
+    fill: var(--secondary-color);
+}
+
+.clients-list-item:hover, .clients-list-item:focus {
+    border: 1px solid var(--secondary-color);
 }
 
 
