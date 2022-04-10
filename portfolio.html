@@ -15,8 +15,10 @@
 <body>
     <header class="header">
         <div class="container">
-          <a class="logo" href="index.html">Web<span class="span-logo">Studio</span></a>
-          <nav class="navigation"> 
+          <a class="logo" href="index.html"
+            >Web<span class="span-logo">Studio</span></a
+          >
+          <nav class="navigation">
             <ul class="nav-list">
               <li class="nav-list-item">
                 <a class="nav-list-link" href="./index.html">Agencja</a>
@@ -28,9 +30,16 @@
                 <a class="nav-list-link" href="/contact">Kontakt</a>
               </li>
             </ul>
-         </nav>
-         <a class="nav-address-mail" href="mailto:info@devstudio.com">info@mdevstudio.com</a>
-         <a class="nav-address-phone" href="tel:+48111111111">+48 111-111-111</a>
+          </nav>
+  
+          <a class="nav-address-mail" href="mailto:info@devstudio.com">
+            <svg class="contact-icon" width="12" height="16">
+              <use href="./images/icons.svg#icon-envelope"></use></svg
+            >info@mdevstudio.com</a>
+          <a class="nav-address-phone" href="tel:+48111111111">
+            <svg class="contact-icon" width="12" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use></svg
+            >+48 111-111-111</a>
         </div>
     </header>
 
@@ -142,15 +151,50 @@
 
  <footer class="footer section">
     <div class="container">
-      <a class="logo-down" href="/logo"
-        >Web<span class="footer-logo">Studio</span></a>
-      <address class="address">
-        m.Warszawa, Aleje Jerozolimskie 21
-        <a class="foot-link" href="mailto:info@example.com"
-          >info@example.com</a>
-        <a class="foot-link" href="tel:+48111111111">+48 111-111-111</a>
-      </address>
-    </div>
+        <div class="footer-left">
+          <a class="logo-down" href="/logo"
+          >Web<span class="footer-logo">Studio</span></a>
+          <address class="address">
+            m.Warszawa, Aleje Jerozolimskie 21
+            <a class="foot-link" href="mailto:info@example.com">
+              info@example.com</a> 
+            <a class="foot-link" href="tel:+48111111111">+48 111-111-111</a>
+          </address>
+        </div> 
+        <div class="footer-socials">
+          <p class="footer-socials-text">dołącz do nas</p>
+          <ul class="footer-socials-list">
+            <li class="footer-socials-item">
+              <a class="footer-socials-link" href="#">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a class="footer-socials-link" href="#">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a class="footer-socials-link" href="#">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a class="footer-socials-link" href="#">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li> 
+          </ul>          
+        </div>        
+      </div>
   </footer>
 </body>
 </html>
