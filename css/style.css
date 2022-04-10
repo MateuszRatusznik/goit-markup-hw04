@@ -12,7 +12,8 @@
     --shadow-color: rgba(0, 0, 0, 0.15);
     --team-shadow-color: rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     --button-shadow-color: rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    --bg-overlay: rgba(47, 48, 58, 0.4);                   
+    --bg-overlay: rgba(47, 48, 58, 0.4);  
+    --social-icon: #AFB1B8;                 
 }
 body {
     font-family: var(--main-font);
@@ -55,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 ul, li {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 p {
@@ -70,6 +72,7 @@ figure, figcaption {
 .nav-address-mail:focus, .nav-address-phone:hover, .nav-address-phone:focus,
 .team-list-link:hover, .team-list-link:focus {
     color: var(--secondary-color);
+    fill: var(--secondary-color);
 }
 
 /*==== HEADER ====*/
@@ -111,6 +114,7 @@ figure, figcaption {
 .nav-address-mail, .nav-address-phone {
     display: flex;
     color: var(--main-color);
+    fill: var(--main-color);
     align-items: center;
     
 }
@@ -119,9 +123,7 @@ figure, figcaption {
     margin-right: 50px;
 }
 
-.icon-smartphone, .icon-envelope {
-    width: 16px;
-    height: 12px;
+.contact-icon {
     margin-right: 10px;
 }
 
@@ -139,7 +141,7 @@ figure, figcaption {
     background-image: linear-gradient(
         var(--bg-overlay),
         var(--bg-overlay)),
-    url('./images/bg-img.jpg');
+    url('/images/bg-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -206,11 +208,6 @@ figure, figcaption {
     margin-bottom: 30px;
 }
 
-.icon-group {
-    width: 70px;
-    height: 70px; 
-}
-
 .heading {
     color: var(--four-color);
     text-transform: uppercase;
@@ -265,29 +262,32 @@ figure, figcaption {
     box-shadow: 0px 1px 3px var(--team-shadow-color);
     border-radius: 0px 0px 4px 4px;
     height: 428px;
+    background-color: var(--third-color);
 }
 
 .socials-links {
     display: flex;
+    padding-top: 16px;
     justify-content: space-evenly;
     align-content: center;
 }
 
 .team-list-link {
+    display: flex;
     text-decoration: none;
-}
-
-.social-icon {
-    width: 20px;
-    height: 20px; 
+    width: 44px;
+    height: 44px;
+    background-color: var(--third-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--social-icon);
 }
 
 .team-list-link:focus, .team-list-link:hover {
-    width: 44px;
-    height: 44px;
     background-color: var(--secondary-color);
-    border-radius: 50%;
     fill: var(--third-color);
+    
 }
 
 .name {
@@ -305,6 +305,18 @@ figure, figcaption {
     letter-spacing: 0.03rem;
     text-align: center;
 }
+
+/* ===== OUR CLIENTS ====*/
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients-list-link {
+    fill: var(--main-color);
+}
+
 
 /* ===== FOOTER ===== */
 
